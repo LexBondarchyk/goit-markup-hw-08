@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.min.css">
+    <title>Портфоліо</title>
+</head>
+<body>
+  <header class="header"> <!--Header-->
+    <div class="header__container container">
+      <a class="logo" lang="en" href="./index.html"><span class="logo--acent">Web</span>Studio
+      </a>
+      <div class="menu js-menu-container">
+
+        <nav class="navigation">
+          <ul class="menu__list">
+            <li class="menu__items">
+              <a class="menu__link" href="./index.html">Студія
+              </a>
+            </li>
+            <li class="menu__items">
+              <a class="menu__link menu__link--active" href="./portfolio.html">Портфоліо</a>
+            </li>
+            <li class="menu__items">
+              <a class="menu__link" href="./index.html">Контакти</a>
+            </li>
+          </ul>
+        </nav>
+
+        <ul class="contacts">
+            <li class="contacts__item">
+              <a class="contacts__link" href="mailto:info@devstudio.com">
+                <svg class="contacts-icon">
+                  <use href="./svg/symbol-defs.svg#icon-envelope" width="16px" height="12px"></use>
+                </svg>
+                info@devstudio.com</a>
+            </li>
+            <li class="contacts__item">
+              <a class="contacts__link" href="tel:+380961111111">
+                <svg class="contacts-icon">
+                <use href="./svg/symbol-defs.svg#icon-smartphone" width="10px" height="16px"></use>
+              </svg>+380961111111</a>
+            </li>
+        </ul>
+
+        <ul class="menu__social">
+            <li class="menu__social__item">
+              <a class="menu__social__link" href="./">Instagram</a>
+            </li>
+            <li class="menu__social__item">
+              <a class="menu__social__link" href="./">Twitter</a>
+            </li>
+            <li class="menu__social__item">
+              <a class="menu__social__link" href="./">Facebook</a>
+            </li>
+            <li class="menu__social__item">
+              <a class="menu__social__link" href="./">Linkedin</a>
+            </li>
+        </ul>
+      </div>
+      <button
+      class="menu__button js-open-menu"
+      type="button"
+      aria-expanded="false"
+    >
+      <svg class="menu__icon" aria-label="Переключатель мобильного меню">
+        <use
+          class="icon__cross"
+          href="./images/icons/sprites.svg#cross"
+        ></use>
+        <use
+          class="icon__burger"
+          href="./images/icons/sprites.svg#burger"
+        ></use>
+      </svg>
+    </button>
+    </div>
+  </header>
+  <main>
+    <section class="section">
+      <div class="container">
+        <ul class="filter-but">
+          <li class="filter-but-item">
+              <button type="button" class="button filter-button filter-button--active">Все</button>
+          </li>
+          <li class="filter-but-item">
+              <button type="button"   class="button filter-button">Веб-сайти</button>
+          </li>
+          <li class="filter-but-item">
+              <button type="button" class="button filter-button">Додатки</button>
+          </li>
+          <li class="filter-but-item">
+              <button type="button" class="button filter-button">Дизайн</button>
+          </li>
+          <li class="filter-but-item">
+              <button type="button" class="button filter-button">Маркетинг</button>
+          </li>
+        </ul>
+        <ul class="target-project">
+          <li class="target-project-item">
+            <div class="hidden-box">
+              <picture class="project__thumb">
+                <!-- Mobile -->
+                <source
+                  type="image/jpeg"
+                  srcset="
+                    ./images/portfolio/techno-450.jpg     450w,
+                    ./images/portfolio/techno-450@2x.jpg  900w,
+                    ./images/portfolio/techno-450@3x.jpg 1350w
+                  "
+                  media="screen and (max-width:767px)"
+                  sizes="(max-width:767px) 100vw"
+                />
+                <!-- Tablet -->
+                <source
+                  type="image/jpeg"
+                  srcset="
+                    ./images/portfolio/techno-354.jpg    354w,
+                    ./images/portfolio/techno-354@2x.jpg 708w
+                  "
+                  media="screen and (max-width:1199px)"
+                  sizes="(min-width: 768px) 50vw"
+                />
+                <!-- Desktop -->
+                <source
+                  type="image/jpeg"
+                  srcset="
+                    ./images/portfolio/techno-370.jpg    370w,
+                    ./images/portfolio/techno-370@2x.jpg 740w
+                  "
+                  media="screen and (min-width:1200px)"
+                  sizes="(min-width: 1200px) 33vw"
+                />
+                <!-- IMG -->
+                <img
+                  srcset="
+                    ./images/portfolio/techno-370.jpg 370w,
+                    ./images/portfolio/techno-354.jpg 354w,
+                    ./images/portfolio/techno-450.jpg 450w
+                  "
+                  sizes="
+                  (min-width: 1200px) 33vw,
+                  (min-width: 768px) 50vw, 100vw
+                  "
+                  src="./images/portfolio/techno-370.jpg"
+                  alt="Технокряк"
+                />
+              </picture>
+              <div class="hidden-content">
+                <p class="hidden-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+              </div>
+            </div>             
+            <div class="filter-text"> 
+              <h3 class="target-name" lang="en">Технокряк</h3>
+              <p class="target-but">Веб-сайт</p>
+            </div>
+          </li>      
+          <li class="target-project-item" lang="en"> 
+            <div class="hidden-box">
+              <picture class="project__thumb">
+                <!-- Mobile -->
+                <source
+                  type="image/jpeg"
+                  srcset="
+                    ./images/portfolio/new-orlean-450.jpg     450w,
+                    ./images/portfolio/new-orlean-450@2x.jpg  900w,
+                    ./images/portfolio/new-orlean-450@3x.jpg 1350w
+                  "
+                  media="screen and (max-width:767px)"
+                  sizes="100vw"
+                />
+                <!-- Tablet -->
+                <source
+                  type="image/jpeg"
+                  srcset="
+                    ./images/portfolio/new-orlean-354.jpg    354w,
+                    ./images/portfolio/new-orlean-354@2x.jpg 708w
+                  "
+                  media="screen and (max-width:1199px)"
+                  sizes="(min-width: 768px) 50vw, 100vw"
+                />
+                <!-- Desktop -->
+                <source
+                  type="image/jpeg"
+                  srcset="
+                    ./images/portfolio/new-orlean-370.jpg    370w,
+                    ./images/portfolio/new-orlean-370@2x.jpg 740w
+                  "
+                  media="screen and (min-width:1200px)"
+                  sizes="(min-width: 1200px) 33vw, 100vw"
+                />
+                <!-- IMG -->
+                <img
+                  srcset="
+                    ./images/portfolio/new-orlean-370.jpg 370w,
+                    ./images/portfolio/new-orlean-354.jpg 354w,
+                    ./images/portfolio/new-orlean-450.jpg 450w
+                  "
+                  sizes="
+                  (min-width: 1200px) 33vw,
+                  (min-width: 768px) 50vw, 100vw
+                  "
+                  src="./images/portfolio/new-orlean-370.jpg"
+                  alt="Постер New Orlean vs Golden Star"
+                />
+              </picture>
+              <div class="hidden-content">
+                <p class="hidden-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+              </div>
+            </div>
+            <div class="filter-text"> 
+              <h3 class="target-name" lang="en">Постер New Orlean vs Golden Star</h3>
+              <p class="target-but">Дизайн</p>
+            </div>          
+          </li>
+          <li class="target-project-item" lang="en">
+            <div class="hidden-box">
+              <picture class="project__thumb">
+                <!-- Mobile -->
+                <source
+                  type="image/jpeg"
+                  srcset="
+                    ./images/portfolio/seafood-450.jpg     450w,
+                    ./images/portfolio/seafood-450@2x.jpg  900w,
+                    ./images/portfolio/seafood-450@3x.jpg 1350w
+                  "
+                  media="screen and (max-width:767px)"
+                  sizes="100vw"
+                />
+                <!-- Tablet -->
+                <source
+                  type="image/jpeg"
+                  srcset="
+                    ./images/portfolio/seafood-354.jpg    354w,
+                    ./images/portfolio/seafood-354@2x.jpg 708w
+                  "
+                  media="screen and (max-width:1199px)"
+                  sizes="(min-width: 768px) 50vw, 100vw"
+                />
+                <!-- Desktop -->
+                <source
+                  type="image/jpeg"
+                  srcset="
+                    ./images/portfolio/seafood-370.jpg    370w,
+                    ./images/portfolio/seafood-370@2x.jpg 740w
+                  "
+                  media="screen and (min-width:1200px)"
+                  sizes="(min-width: 1200px) 33vw, 100vw"
+                />
+                <!-- IMG -->
+                <img
+                  srcset="
+                    ./images/portfolio/seafood-370.jpg 370w,
+                    ./images/portfolio/seafood-354.jpg 354w,
+                    ./images/portfolio/seafood-450.jpg 450w
+                  "
+                  sizes="
+                  (min-width: 1200px) 33vw,
+                  (min-width: 768px) 50vw, 100vw
+                  "
+                  src="./images/portfolio/seafood-370.jpg"
+                  alt="Ресторан Seafood"
+                />
+              </picture>
+              <div class="hidden-content">
+                <p class="hidden-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+            </div>
+            </div>
+            <div class="filter-text">
+                <h3 class="target-name" lang="en">Ресторан Seafood</h3>
+                <p class="target-but">Додаток</p>
+            </div>           
+          </li>
+          <li class="target-project-item" lang="en">
+            <div class="hidden-box">
+              <picture class="project__thumb">
+                <!-- Mobile -->
+                <source
+                  type="image/jpeg"
+                  srcset="
+                    ./images/portfolio/prime-450.jpg     450w,
+                    ./images/portfolio/prime-450@2x.jpg  900w,
+                    ./images/portfolio/prime-450@3x.jpg 1350w
+                  "
+                  media="screen and (max-width:767px)"
+                  sizes="100vw"
+                />
+                <!-- Tablet -->
+                <source
+                  type="image/jpeg"
+                  srcset="
+                    ./images/portfolio/prime-354.jpg    354w,
+                    ./images/portfolio/prime-354@2x.jpg 708w
+                  "
+                  media="screen and (max-width:1199px)"
+                  sizes="(min-width: 768px) 50vw, 100vw"
+                />
+                <!-- Desktop -->
+                <source
+                  type="image/jpeg"
+                  srcset="
+                    ./images/portfolio/prime-370.jpg    370w,
+                    ./images/portfolio/prime-370@2x.jpg 740w
+                  "
+                  media="screen and (min-width:1200px)"
+                  sizes="(min-width: 1200px) 33vw, 100vw"
+                />
+                <!-- IMG -->
+                <img
+                  srcset="
+                    ./images/portfolio/prime-370.jpg 370w,
+                    ./images/portfolio/prime-354.jpg 354w,
+                    ./images/portfolio/prime-450.jpg 450w
+                  "
+                  sizes="
+                (min-width: 1200px) 33vw,
+                (min-width: 768px) 50vw, 100vw
+                "
+                  src="./images/portfolio/prime-370.jpg"
+                  alt="Проект Prime"
+                />
+              </picture>
+              <div class="hidden-content">
+                <p class="hidden-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+              </div>
+            </div>
+            <div class="filter-text">
+                <h3 class="target-name" lang="en">Проект Prime</h3>
+                <p class="target-but">Маркетинг</p>
+            </div>
+          </li>      
+          <li class="target-project-item" lang="en">
+            <div class="hidden-box">
+              <picture class="project__thumb">
+                <!-- Mobile -->
+                <source
+                  type="image/jpeg"
+                  srcset="
+                    ./images/portfolio/boxes-450.jpg     450w,
+                    ./images/portfolio/boxes-450@2x.jpg  900w,
+                    ./images/portfolio/boxes-450@3x.jpg 1350w
+                  "
+                  media="screen and (max-width:767px)"
+                  sizes="100vw"
+                />
+                <!-- Tablet -->
+                <source
+                  type="image/jpeg"
+                  srcset="
+                    ./images/portfolio/boxes-354.jpg    354w,
+                    ./images/portfolio/boxes-354@2x.jpg 708w
+                  "
+                  media="screen and (max-width:1199px)"
+                  sizes="(min-width: 768px) 50vw, 100vw"
+                />
+                <!-- Desktop -->
+                <source
+                  type="image/jpeg"
+                  srcset="
+                    ./images/portfolio/boxes-370.jpg    370w,
+                    ./images/portfolio/boxes-370@2x.jpg 740w
+                  "
+                  media="screen and (min-width:1200px)"
+                  sizes="(min-width: 1200px) 33vw, 100vw"
+                />
+                <!-- IMG -->
+                <img
+                  srcset="
+                    ./images/portfolio/boxes-370.jpg 370w,
+                    ./images/portfolio/boxes-354.jpg 354w,
+                    ./images/portfolio/boxes-450.jpg 450w
+                  "
+                  sizes="
+                  (min-width: 1200px) 33vw,
+                  (min-width: 768px) 50vw, 100vw
+                  "
+                  src="./images/portfolio/boxes-370.jpg"
+                  alt="Проект Boxes"
+                />
+              </picture>
+              <div class="hidden-content">
+                <p class="hidden-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+              </div>
+            </div>
+           <div class="filter-text">
+             <h3 class="target-name" lang="en">Проект Boxes</h3>
+             <p class="target-but">Додаток</p>
+           </div>
+          </li>
+          <li class="target-project-item" lang="en">
+            <div class="hidden-box">
+              <picture class="project__thumb">
+                <!-- Mobile -->
+                <source
+                  type="image/jpeg"
+                  srcset="
+                    ./images/portfolio/inspiration-450.jpg     450w,
+                    ./images/portfolio/inspiration-450@2x.jpg  900w,
+                    ./images/portfolio/inspiration-450@3x.jpg 1350w
+                  "
+                  media="screen and (max-width:767px)"
+                  sizes="100vw"
+                />
+                <!-- Tablet -->
+                <source
+                  type="image/jpeg"
+                  srcset="
+                    ./images/portfolio/inspiration-354.jpg    354w,
+                    ./images/portfolio/inspiration-354@2x.jpg 708w
+                  "
+                  media="screen and (max-width:1199px)"
+                  sizes="(min-width: 768px) 50vw, 100vw"
+                />
+                <!-- Desktop -->
+                <source
+                  type="image/jpeg"
+                  srcset="
+                    ./images/portfolio/inspiration-370.jpg    370w,
+                    ./images/portfolio/inspiration-370@2x.jpg 740w
+                  "
+                  media="screen and (min-width:1200px)"
+                  sizes="(min-width: 1200px) 33vw, 100vw"
+                />
+                <!-- IMG -->
+                <img
+                  srcset="
+                    ./images/portfolio/inspiration-370.jpg 370w,
+                    ./images/portfolio/inspiration-354.jpg 354w,
+                    ./images/portfolio/inspiration-450.jpg 450w
+                  "
+                  sizes="
+                  (min-width: 1200px) 33vw,
+                  (min-width: 768px) 50vw, 100vw
+                  "
+                  src="./images/portfolio/inspiration-370.jpg"
+                  alt="Inspiration has no Borders"
+                />
+              </picture>
+              <div class="hidden-content">
+                <p class="hidden-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+              </div>
+            </div>
+            <div class="filter-text">
+              <h3 class="target-name" lang="en">Inspiration has no Borders</h3>
+              <p class="target-but">Веб-сайт</p>
+            </div>
+          </li>
+          <li class="target-project-item" lang="en">
+            <div class="hidden-box">
+              <picture class="project__thumb">
+                <!-- Mobile -->
+                <source
+                  type="image/jpeg"
+                  srcset="
+                    ./images/portfolio/limited-edition-450.jpg     450w,
+                    ./images/portfolio/limited-edition-450@2x.jpg  900w,
+                    ./images/portfolio/limited-edition-450@3x.jpg 1350w
+                  "
+                  media="screen and (max-width:767px)"
+                  sizes="100vw"
+                />
+                <!-- Tablet -->
+                <source
+                  type="image/jpeg"
+                  srcset="
+                    ./images/portfolio/limited-edition-354.jpg    354w,
+                    ./images/portfolio/limited-edition-354@2x.jpg 708w
+                  "
+                  media="screen and (max-width:1199px)"
+                  sizes="(min-width: 768px) 50vw, 100vw"
+                />
+                <!-- Desktop -->
+                <source
+                  type="image/jpeg"
+                  srcset="
+                    ./images/portfolio/limited-edition-370.jpg    370w,
+                    ./images/portfolio/limited-edition-370@2x.jpg 740w
+                  "
+                  media="screen and (min-width:1200px)"
+                  sizes="(min-width: 1200px) 33vw, 100vw"
+                />
+                <!-- IMG -->
+                <img
+                  srcset="
+                    ./images/portfolio/limited-edition-370.jpg 370w,
+                    ./images/portfolio/limited-edition-354.jpg 354w,
+                    ./images/portfolio/limited-edition-450.jpg 450w
+                  "
+                  sizes="
+                  (min-width: 1200px) 33vw,
+                  (min-width: 768px) 50vw, 100vw
+                  "
+                  src="./images/portfolio/limited-edition-370.jpg"
+                  alt="Издание Limited Edition"
+                />
+              </picture>
+              <div class="hidden-content">
+                <p class="hidden-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+              </div>
+            </div>
+            <div class="filter-text">
+                <h3 class="target-name" lang="en">Видання Limited Edition</h3>
+                <p class="target-but">Дизайн</p>
+            </div>
+          </li>      
+          <li class="target-project-item" lang="en">
+            <div class="hidden-box">
+              <picture class="project__thumb">
+                <!-- Mobile -->
+                <source
+                  type="image/jpeg"
+                  srcset="
+                    ./images/portfolio/lab-450.jpg     450w,
+                    ./images/portfolio/lab-450@2x.jpg  900w,
+                    ./images/portfolio/lab-450@3x.jpg 1350w
+                  "
+                  media="screen and (max-width:767px)"
+                  sizes="100vw"
+                />
+                <!-- Tablet -->
+                <source
+                  type="image/jpeg"
+                  srcset="
+                    ./images/portfolio/lab-354.jpg    354w,
+                    ./images/portfolio/lab-354@2x.jpg 708w
+                  "
+                  media="screen and (max-width:1199px)"
+                  sizes="(min-width: 768px) 50vw, 100vw"
+                />
+                <!-- Desktop -->
+                <source
+                  type="image/jpeg"
+                  srcset="
+                    ./images/portfolio/lab-370.jpg    370w,
+                    ./images/portfolio/lab-370@2x.jpg 740w
+                  "
+                  media="screen and (min-width:1200px)"
+                  sizes="(min-width: 1200px) 33vw, 100vw"
+                />
+                <!-- IMG -->
+                <img
+                  srcset="
+                    ./images/portfolio/lab-370.jpg 370w,
+                    ./images/portfolio/lab-354.jpg 354w,
+                    ./images/portfolio/lab-450.jpg 450w
+                  "
+                  sizes="
+                  (min-width: 1200px) 33vw,
+                  (min-width: 768px) 50vw, 100vw
+                  "
+                  src="./images/portfolio/lab-370.jpg"
+                  alt="Проект LAB"
+                />
+              </picture>
+              <div class="hidden-content">
+                <p class="hidden-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+              </div>
+            </div>
+            <div class="filter-text">
+              <h3 class="target-name" lang="en">Проект LAB</h3>
+              <p class="target-but">Маркетинг</p>
+            </div>
+          </li>
+          <li class="target-project-item" lang="en">
+            <div class="hidden-box">
+              <picture class="project__thumb">
+                <!-- Mobile -->
+                <source
+                  type="image/jpeg"
+                  srcset="
+                    ./images/portfolio/growing-business-450.jpg     450w,
+                    ./images/portfolio/growing-business-450@2x.jpg  900w,
+                    ./images/portfolio/growing-business-450@3x.jpg 1350w
+                  "
+                  media="screen and (max-width:767px)"
+                  sizes="100vw"
+                />
+                <!-- Tablet -->
+                <source
+                  type="image/jpeg"
+                  srcset="
+                    ./images/portfolio/growing-business-354.jpg    354w,
+                    ./images/portfolio/growing-business-354@2x.jpg 708w
+                  "
+                  media="screen and (max-width:1199px)"
+                  sizes="(min-width: 768px) 50vw, 100vw"
+                />
+                <!-- Desktop -->
+                <source
+                  type="image/jpeg"
+                  srcset="
+                    ./images/portfolio/growing-business-370.jpg    370w,
+                    ./images/portfolio/growing-business-370@2x.jpg 740w
+                  "
+                  media="screen and (min-width:1200px)"
+                  sizes="(min-width: 1200px) 33vw, 100vw"
+                />
+                <!-- IMG -->
+                <img
+                  srcset="
+                    ./images/portfolio/growing-business-370.jpg 370w,
+                    ./images/portfolio/growing-business-354.jpg 354w,
+                    ./images/portfolio/growing-business-450.jpg 450w
+                  "
+                  sizes="
+                  (min-width: 1200px) 33vw,
+                  (min-width: 768px) 50vw, 100vw
+                  "
+                  src="./images/portfolio/growing-business-370.jpg"
+                  alt="Growing Business"
+                />
+              </picture>
+              <div class="hidden-content">
+                <p class="hidden-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения    о компании или частном лице.</p>
+              </div>
+            </div>
+            <div class="filter-text">
+              <h3 class="target-name" lang="en">Growing Business</h3>
+              <p class="target-but">Додаток</p>
+            </div>
+         </li>
+        </ul> 
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer-div container">
+      <div class="address">
+        <a class="logo" lang="en" href="./index.html"><span class="logo--acent">Web</span>Studio</a>
+        <address class="con-address">
+          <a class="con-address" href="https://goo.gl/maps/3XFcRr5mM66JUjLg8">м. Київ, пр-т Лесі Українки, 26</a>
+          <ul class="list-address">
+            <li class="info"><a class="contacts__link" href="mailto:info@example.com">info@devstudio.com</a></li>
+            <li class="info"><a class="contacts__link" href="tel:+380991111111">+380991111111</a></li>
+          </ul>
+        </address>
+      </div>
+      <div class="footer-social"> 
+          <h3 class="social-title">
+            ПРИЄДНУЙТЕСЬ
+          </h3>
+          <ul class="footer-social-list">
+            <li class="social">
+                <a href="" class="icon-border footer-icon">
+                    <svg class="icon instagram">
+                        <use href="./svg/svg-ico/symbol-defs.svg#icon-instagram" width="20px" height="20px"></use>
+                    </svg>
+                </a>
+              </li>
+            <li class="social">
+                <a href="" class="icon-border footer-icon">
+                    <svg class="icon twitter">
+                        <use href="./svg/svg-ico/symbol-defs.svg#icon-twitter"width="20px" height="20px"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="social">
+                <a href="" class="icon-border footer-icon">
+                    <svg class="icon facebook">
+                        <use href="./svg/svg-ico/symbol-defs.svg#icon-facebook" width="20px" height="20px"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="social">
+                <a href="" class="icon-border footer-icon">
+                    <svg class="icon linkedin">
+                        <use href="./svg/svg-ico/symbol-defs.svg#icon-linkedin" width="20px" height="20px"></use>
+                    </svg>
+                </a>
+            </li>
+          </ul>
+      </div>
+      <div class="spam">
+        <h3 class="social-title">ПІДПИШІТСЯ НА РОЗСИЛКУ</h3>
+        <form class="form-email">
+          <input class="email-box" type="email"name="email"placeholder="E-mail">
+          <button class="email-btn button "type="submit">Підписатися
+            <svg class="form-subscribe-icon">
+              <use href="./images/icons/sprites.svg#send"></use>
+            </svg>
+            </button>
+        </form>
+      </div>
+    </div>
+  </footer>
+  <script src="./js/menu.js"></script>
+</body>
+</html>
