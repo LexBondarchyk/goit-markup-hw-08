@@ -1,0 +1,40 @@
+@import './base/normalize';
+@import './base/common';
+@import './utils/variables';
+@import './base/container';
+// --------HEADER----------
+@import './layout/navigation';
+@import './components/navigation-bot-border';
+@import './components/navigation-cmponent';
+@import './layout/header';
+// --------FRONT----------
+@import './layout/front';
+@import './components/front-modal-btm';
+// --------MERIT----------
+@import './layout/merit';
+@import './components/merit-component';
+// --------WHOT-DO----------
+@import './layout/whot-do';
+@import './components/whot-do-component';
+// --------OUR-TEAM----------
+@import './layout/our-team';
+@import './components/our-team-component';
+// --------CLIENT----------
+@import './layout/client';
+@import './components/client-content';
+// --------FOOTER----------
+@import './layout/footer';
+@import './components/footer-component';
+// --------FILTER----------
+@import './layout/filter-but';
+@import './components/filter-but-component';
+// --------FILTER-POSITION----------
+@import './layout/filter-position';
+@import './components/filter-position-content';
+// --------BACKDROP and MODAL----------
+@import './components/backdrop';
+@import './layout/modal-window';
+
+
+
+

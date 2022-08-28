@@ -1,0 +1,140 @@
+.footer {
+  background-color: #2f303a;
+  color: #fff;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.footer-div, .con-address {
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+} 
+@media screen and (min-width: 1200px) {
+  .con-address {
+    text-align: start;
+  }
+}
+.social-title {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.42;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-div {
+    text-align: left;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
+}
+
+.social-title {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.42;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.address {
+  margin-bottom: 60px;
+  .logo{
+    margin-bottom: 20px;
+  }
+  .contacts-link {
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
+@media screen and (min-width: 768px) {
+  .address {
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .address {
+    width: 231px;
+    margin-right: 70px;
+    margin-bottom: 0;
+  }
+}
+.con-address {
+  text-decoration: none;
+  font-style: normal;
+  color: var(--secondary-text--color-white);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  width: 231px;
+}
+.list-address .info {
+  margin-top: 8px;
+}
+@media screen and (min-width: 1200px) {
+  .list-address .info {
+    margin-top: 9px;
+  }
+} 
+.footer-social {
+  margin-bottom: 60px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-social {
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-social {
+    width: 206px;
+    margin-right: 93px;
+  }
+}
+
+.footer-social-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (max-width: 1200px) {
+  .footer-social-list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.social:not(:last-child) {
+  margin-right: 10px;
+}
+
+.footer-icon {
+  background: rgba(255, 255, 255, 0.1);
+  .icon {
+    color: #fff;
+  }
+}

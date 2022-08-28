@@ -1,0 +1,92 @@
+.list-merit {
+    max-width: 450px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .list-merit {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      max-width: 768px;
+      margin-top: calc(-1 * 30px);
+      margin-left: calc(-1 * 30px);
+    }
+  }
+  
+  @media screen and (min-width: 1200px) {
+    .list-merit {
+      max-width: 1200px;
+      margin-top: 0;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .merit-items:not(:first-child) {
+      margin-top: 30px;
+    }
+  }
+  
+  @media screen and (min-width: 768px) {
+    .merit-items {
+      height: calc(100% / 2 - 30px);
+      width: calc(100% / 2 - 30px);
+      margin-left: 30px;
+      margin-top: 30px;
+    }
+  }
+  
+  @media screen and (min-width: 1200px) {
+    .merit-items {
+      -ms-flex-preferred-size: calc(100% / 4 - 30px);
+          flex-basis: calc(100% / 4 - 30px);
+      margin-top: 0;
+    }
+  }
+  
+  .merit-name {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #212121;
+    font-size: 14px;
+    line-height: 1.14;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .merit-name {
+      text-align: left;
+    }
+  }
+  
+  .merit-p {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  
+  .merit-icon-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #f5f4fa;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    padding: 25px 0;
+}
+  
+.merit-icon {
+    width: 70px;
+    height: 70px;
+}
